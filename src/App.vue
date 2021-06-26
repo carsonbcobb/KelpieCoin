@@ -24,7 +24,7 @@
 					</div>
 				</div>
 				<div class="hero__image">
-					<img src="./assets/hero-crop.png" />
+					<img src="./assets/hero-crop.svg" />
 				</div>
 			</div>
 		</section>
