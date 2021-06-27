@@ -464,7 +464,7 @@ body {
 		border: 2px solid #fada00;
 		color: white;
 		font-weight: bolder;
-		font-size: 1.05rem;
+		font-size: 0.9rem;
 		text-decoration: none;
 		transition: 0.35s ease-in-out;
 	}

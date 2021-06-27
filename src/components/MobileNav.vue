@@ -251,7 +251,7 @@ export default {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-55%, -50%);
+	transform: translate(-60%, -50%);
 	text-align: center;
 	list-style: none;
 }
