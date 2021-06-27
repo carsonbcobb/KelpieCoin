@@ -19,12 +19,23 @@
 					</h2>
 
 					<div class="hero__content--buttonGroup">
-						<a class="button" href="#" target="_blank">Buy on Pancakeswap</a>
-						<a class="button" href="#" target="_blank">View Live Charts</a>
+						<a
+							class="button"
+							href="https://exchange.pancakeswap.finance/#/swap"
+							target="_blank"
+							rel="norefferer"
+							>Buy on Pancakeswap</a
+						>
+						<a
+							class="button"
+							href="https://bscscan.com/token/0x667868b1f9a63d1bd81eb659fb9f719809f025ab#tokenAnalytics"
+							target="_blank"
+							>View Live Charts</a
+						>
 					</div>
 				</div>
 				<div class="hero__image">
-					<img src="./assets/hero-crop.svg" />
+					<img src="./assets/hero.png" class="float-animation" />
 				</div>
 			</div>
 		</section>
@@ -133,7 +144,7 @@
 						Contract code is developed by one of the world's most proficient
 						blockchain developers.
 					</p>
-					<a href="#" class="button">REPORT COMING SOON</a>
+					<a class="button button-inactive">REPORT COMING SOON</a>
 				</div>
 				<div class="audit__image mob-img">
 					<img src="./assets/audit.png" />
@@ -145,12 +156,12 @@
 					<h3 class="ghost">Earn</h3>
 					<h4><span class="yellow">Earn</span> Passive Income</h4>
 					<p class="desk">
-						Gain $KLP every time a transaction is made. <br />Our protocol
-						charges a 10% transaction fee; this means 7% <br />goes into a
-						locked liquidity pool and 3% is rewarded to <br />our stakeholders.
-						No need to trade, simply watch your <br />balance increase in
-						real-time. This is called a deflationary<br />
-						currency and will earn up to 80% annual yield percentage -
+						Gain $KLP every time a transaction is made.
+						<br />Our protocol charges a 10% transaction fee; this means 7%
+						<br />goes into a locked liquidity pool and 3% is rewarded to
+						<br />our stakeholders. No need to trade, simply watch your
+						<br />balance increase in real-time. This is called a deflationary
+						<br />currency and will earn up to 80% annual yield percentage -
 						exceptionally higher than any traditional savings account.
 					</p>
 					<p class="mob">
@@ -162,7 +173,13 @@
 						percentage - exceptionally higher than any traditional savings
 						account.
 					</p>
-					<a href="#" class="button">BUY NOW</a>
+					<a
+						href="https://exchange.pancakeswap.finance/#/swap"
+						target="_blank"
+						rel="norefferer"
+						class="button"
+						>BUY ON PANCAKESWAP</a
+					>
 				</div>
 
 				<div class="earn__image">
@@ -214,38 +231,40 @@
 			</div>
 		</section>
 
-		<section id="roadmap">
-			<div class="roadmap">
-				<h2>Roadmap</h2>
-				<div class="underline underline-eco"></div>
-				<div class="roadmap__image desk-img">
-					<img src="./assets/roadmap.svg" />
-				</div>
-
-				<div class="roadmap__image mob-img">
-					<img src="./assets/roadmap-mobile.svg" />
-				</div>
-			</div>
-		</section>
-
-		<section id="network">
-			<div class="network">
-				<h2>Our Network</h2>
-				<div class="underline"></div>
-				<div class="network__image--container">
-					<div class="network__image">
-						<img src="./assets/binance.svg" />
+		<div class="end_bg">
+			<section id="roadmap">
+				<div class="roadmap">
+					<h2>Roadmap</h2>
+					<div class="underline underline-eco"></div>
+					<div class="roadmap__image desk-img">
+						<img src="./assets/roadmap.png" />
 					</div>
-					<div class="vertical-line"></div>
-					<div class="network__image">
-						<img src="./assets/pancake.svg" />
+
+					<div class="roadmap__image mob-img">
+						<img src="./assets/roadmap-mobile.svg" />
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 
-		<div class="footer">
-			<p>Copyright © 2021 All Rights Reserved.</p>
+			<section id="network">
+				<div class="network">
+					<h2>Our Network</h2>
+					<div class="underline"></div>
+					<div class="network__image--container">
+						<div class="network__image">
+							<img src="./assets/binance.svg" />
+						</div>
+						<div class="vertical-line"></div>
+						<div class="network__image">
+							<img src="./assets/pancake.svg" />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="footer">
+				<p>Copyright © 2021 All Rights Reserved.</p>
+			</div>
 		</div>
 	</div>
 </template>
@@ -256,6 +275,7 @@ import MobileNav from './components/MobileNav.vue';
 
 export default {
 	name: 'App',
+
 	components: {
 		Nav,
 		MobileNav,
@@ -264,24 +284,63 @@ export default {
 </script>
 
 <style>
+@keyframes background-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes float {
+	0% {
+		transform: translateY(0%);
+	}
+
+	40% {
+		transform: translateY(8%);
+	}
+
+	80% {
+		transform: translateY(-8%);
+	}
+
+	100% {
+		transform: translateY(0%);
+	}
+}
+
 html {
 	background: rgb(30, 5, 83);
 	font-family: 'Poppins', sans-serif;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 
 body {
 	max-width: 1440px;
 	margin: auto;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 
 #hero {
-	background: rgb(30, 5, 83);
 	background: linear-gradient(
-		45deg,
-		rgb(78, 17, 158) 0%,
-		rgb(65, 9, 105) 50%,
-		rgba(30, 5, 83, 1) 100%
+		120deg,
+		#fad900e7,
+		rgb(30, 5, 83),
+		rgb(78, 17, 158),
+		rgb(65, 9, 105),
+		rgb(78, 17, 158),
+		#fad900e7,
+		rgb(30, 5, 83)
 	);
+	background-size: 400% 400%;
+	animation: background-animation 20s ease infinite;
 	border-bottom: 2px solid #fad9007c;
 }
 
@@ -290,6 +349,7 @@ body {
 	flex-direction: row;
 	justify-content: space-evenly;
 	align-items: center;
+	padding: 50px 0;
 }
 
 .hero__content {
@@ -338,12 +398,22 @@ body {
 	font-size: 1.475rem;
 }
 
+.button-inactive {
+	background: #3f3749;
+}
+.button-inactive:hover {
+	background: #3f3749;
+	border: 2px solid #fada00;
+	color: white;
+}
+
 .yellow {
 	color: #fada00;
 }
 
 .hero__image img {
-	max-width: 400px;
+	width: 400px;
+	animation: float 10s ease-in-out 0.5s infinite;
 }
 
 .mob {
@@ -812,18 +882,26 @@ body {
 }
 /*ROADMAP*/
 
+.end_bg {
+	background: linear-gradient(
+		45deg,
+		rgb(30, 5, 83),
+		rgb(78, 17, 158),
+		rgb(65, 9, 105),
+		rgb(78, 17, 158),
+		rgb(30, 5, 83)
+	);
+	background-size: 400% 400%;
+	animation: background-animation 10s ease infinite;
+}
+
 .roadmap {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	color: white;
-	background: linear-gradient(
-		to top,
-		rgb(78, 17, 158) 0%,
-		rgb(65, 9, 105) 50%,
-		rgb(30, 5, 83) 100%
-	);
+	border-top: 1px solid #fada00;
 }
 
 .roadmap h2 {
@@ -848,12 +926,6 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background: linear-gradient(
-		to bottom,
-		rgb(78, 17, 158) 0%,
-		rgb(65, 9, 105) 50%,
-		rgb(30, 5, 83) 100%
-	);
 
 	padding-top: 150px;
 	text-align: center;
