@@ -41,5 +41,9 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "main": "index.js",
+  "repository": "git@github.com:carsonbcobb/KelpieCoin.git",
+  "author": "carsonbcobb <carsonbcobb@gmail.com>",
+  "license": "MIT"
 }

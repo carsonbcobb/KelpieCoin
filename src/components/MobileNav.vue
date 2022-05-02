@@ -35,11 +35,9 @@
 					<li class="navigation__item" @click="hideNav()">
 						<a href="#swap" class="navigation__link">Tokenomics</a>
 					</li>
+				
 					<li class="navigation__item" @click="hideNav()">
-						<a href="#eco" class="navigation__link">Ecosystem</a>
-					</li>
-					<li class="navigation__item" @click="hideNav()">
-						<a href="#roadmap" class="navigation__link">Roadmap</a>
+						<a href="#earn" class="navigation__link">Earn</a>
 					</li>
 					<li class="navigation__item" @click="hideNav()">
 						<a href="#network" class="navigation__link">Network</a>
@@ -67,6 +65,21 @@ export default {
 </script>
 
 <style scoped>
+@keyframes background-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
 .mobileNav {
 	padding: 25px;
 }
@@ -217,21 +230,37 @@ export default {
 	width: 5rem;
 	height: 5rem;
 	border-radius: 50%;
-	background-color: #fff;
-	box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+background: linear-gradient(45deg,
+      rgb(30, 5, 83),
+      rgb(78, 17, 158),
+      rgb(65, 9, 105),
+      rgb(78, 17, 158),
+      rgb(30, 5, 83));
+  background-size: 400% 400%;
+  animation: background-animation 10s ease infinite;	z-index: 10;	box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
 	cursor: pointer;
 	z-index: 12;
 	text-align: center;
 }
+
+.navigation__button::after {
+	background:white;
+}
 .navigation__background {
 	position: absolute;
-	top: 1.5rem;
-	right: 1rem;
-	width: 6rem;
-	height: 6rem;
+	top: 2rem;
+	right: 1.5rem;
+	width: 5rem;
+	height: 5rem;
 	border-radius: 50%;
-	background-image: radial-gradient(#fada00, #803018);
-	z-index: 10;
+  background: linear-gradient(45deg,
+      rgba(250, 218, 0, .99),
+      rgba(204, 177, 0, .99),
+      rgba(250, 218, 0, .99),
+			rgba(204, 177, 0, .99),
+      rgba(250, 218, 0, .99));
+  background-size: 400% 400%;
+  animation: background-animation 10s ease infinite;	z-index: 10;
 	transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
 }
 .navigation__nav {
@@ -248,10 +277,7 @@ export default {
 		transform 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .navigation__list {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-60%, -50%);
+margin: 250px 25px 0 0;
 	text-align: center;
 	list-style: none;
 }
@@ -267,7 +293,7 @@ export default {
 	font-size: 1.5rem;
 	font-weight: normal;
 	padding: 1rem 2rem;
-	color: #45108a;
+	color: #fff;
 	text-decoration: none;
 	text-transform: uppercase;
 	background-image: linear-gradient(
@@ -295,14 +321,9 @@ export default {
 }
 .navigation__icon-span {
 	position: absolute;
-	height: 0.5rem;
+	height: 0.25rem;
 	width: 50%;
-	background: linear-gradient(
-		to bottom,
-		rgb(78, 17, 158) 0%,
-		rgb(65, 9, 105) 50%,
-		rgba(30, 5, 83, 1) 100%
-	);
+	background:  rgba(250, 250, 250, .75);
 	transition: all 0.5s ease-in;
 }
 .navigation__icon-span:nth-child(even) {
@@ -372,7 +393,7 @@ export default {
 	transform: translateX(0.3rem) scale(1.1);
 }
 .navigation__checkbox:checked + .navigation__button:hover .navigation__icon {
-	transform: rotate(180deg);
+	transform: rotate(180deg) translateY(25%);
 }
 .header {
 	background-image: linear-gradient(to right bottom, #7ed56f, #28b485);

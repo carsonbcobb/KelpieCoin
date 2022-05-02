@@ -1,996 +1,926 @@
 <template>
-	<div>
-		<section id="hero">
-			<Nav />
-			<MobileNav />
-			<div class="hero">
-				<div class="hero__content">
-					<h1 class="hero__content--header">
-						Welcome to
-						<span class="yellow">Kelpie Coin</span>
-					</h1>
-					<h2 class="hero__content--subheader desk">
-						Kelpie is a deflationary yield token on the
-						<br />Binance Smart Chain with multi-dimensional <br />NFTs.
-					</h2>
-					<h2 class="hero__content--subheader mob">
-						Kelpie is a deflationary yield token on the Binance Smart Chain with
-						multi-dimensional NFTs.
-					</h2>
+<div>
+  <section id="hero">
+    <Nav />
+    <MobileNav />
+    <div class="hero">
+      <HeroBackgroundAnimation />
 
-					<div class="hero__content--buttonGroup">
-						<a
-							class="button"
-							href="https://exchange.pancakeswap.finance/#/swap"
-							target="_blank"
-							rel="norefferer"
-							>Buy on Pancakeswap</a
-						>
-						<a
-							class="button"
-							href="https://bscscan.com/token/0x667868b1f9a63d1bd81eb659fb9f719809f025ab#tokenAnalytics"
-							target="_blank"
-							>View Live Charts</a
-						>
-					</div>
-				</div>
-				<div class="hero__image">
-					<img src="./assets/hero.png" class="float-animation" />
-				</div>
-			</div>
-		</section>
-		<section id="about">
-			<div class="about">
-				<div class="about__header">
-					<div class="about__header--img">
-						<img src="./assets/logo.png" />
-					</div>
-					<h2>About Kelpie Coin</h2>
-				</div>
-				<div class="underline about-underline"></div>
-				<div class="about__content">
-					<p class="desk">
-						Kelpie Coin is a frictionless yield and liquidity generation
-						protocol that helps
-						<br />the token holders earn passive income while also enhancing the
-						liquidity of the <br />pool. This is funded by 10% of the
-						transaction fee taken from each transaction. This <br />protocol has
-						a permanently increasing-price floor, with all investors earning
-						<br />additional SafeMoon Swap tokens for just holding it.
-					</p>
+      <div class="hero__content">
+        <h1 class="hero__content--header">
+          Kelpie Coin<br />
+          <span class="yellow">$KLP</span>
+        </h1>
+        <h2 class="hero__content--subheader desk">
+          Kelpie Coin is a frictionless yield<br /> and liquidity generation protocol
+          <br /> on the Solana Network.
+        </h2>
+        <h2 class="hero__content--subheader mob">
+          Kelpie Coin is a frictionless yield and liquidity generation protocol
+          on the Solana Network.
+        </h2>
 
-					<p class="mob">
-						Kelpie Coin is a frictionless yield and liquidity generation
-						protocol that helps the token holders earn passive income while also
-						enhancing the liquidity of the pool. This is funded by 10% of the
-						transaction fee taken from each transaction. This protocol has a
-						permanently increasing-price floor, with all investors earning
-						additional SafeMoon Swap tokens for just holding it.
-					</p>
-				</div>
-			</div>
+        <div class="hero__content--buttonGroup">
+          <div class="button hero__button">
+            <a href="https://trade.dexlab.space/#/market/9wFFyRfZBsuAha4YcuxcXLKwMxJR43S7fPfQLusDBzvT" target="_blank" rel="norefferer">Trade on DexLab</a>
+						
+          </div>
+        </div>
+									<p class="center">* Exchange listing launches on 5/13/2022</p>
 
-			<div class="swap" id="swap">
-				<div class="swap__header">
-					<div class="swap__header--img">
-						<img src="./assets/logo.png" />
-					</div>
-					<h3>KELPIE COIN EXCHANGE</h3>
-				</div>
+      </div>
+      <div class="hero__image">
+        <img src="./assets/hero.png" class="float-animation" />
+      </div>
 
-				<div class="swap__section">
-					<div class="swap__section--item">
-						<p class="item-1">Token Name</p>
-						<p class="item-2 blue">Kelpie Coin</p>
-					</div>
-					<div class="swap__section--item">
-						<p class="item-1">Ticker</p>
-						<p class="item-2">$KLP</p>
-					</div>
-					<div class="swap__section--item">
-						<p class="item-1">Total Supply</p>
-						<p class="item-2 yellow">100 Thousand</p>
-					</div>
+    </div>
 
-					<div class="swap__section--item">
-						<p class="item-1">Initial Burn</p>
-						<p class="item-2 yellow">100 Thousand</p>
-					</div>
-					<div class="swap__section--item">
-						<p class="item-1">PancakeSwap Liquidity</p>
-						<p class="item-2 blue">100 Thousand</p>
-					</div>
-					<div class="swap__section--item">
-						<p class="item-1">CEX Liquidity</p>
-						<p class="item-2">100 Thousand</p>
-					</div>
+  </section>
+  <section id="about">
+    <div class="about">
+      <div class="about__header">
+        <div class="about__header--img">
+          <img src="./assets/logo.png" />
+        </div>
+        <h2>About Kelpie Coin</h2>
+      </div>
+      <div class="underline about-underline"></div>
+      <div class="about__content">
+        <p>
+          Kelpie Coin is a frictionless yield and liquidity generation
+          protocol that will help
+          the token holders earn passive income while also enhancing the
+          liquidity of the pool in the near future. This will be funded by 5% of the
+          transaction fee taken from each transaction. This protocol has
+          a permanently increasing-price floor, with all investors earning
+          additional Kelpie Coin tokens for just holding it.
+        </p>
 
-					<div class="swap__section--item">
-						<p class="item-1">Team Wallets</p>
-						<p class="item-2">100</p>
-					</div>
-					<div class="swap__section--item">
-						<p class="item-1">Reward to Holders</p>
-						<p class="item-2 yellow">3%</p>
-					</div>
-					<div class="swap__section--item">
-						<p class="item-1">Liquidity Pool</p>
-						<p class="item-2 blue">100%</p>
-					</div>
-				</div>
-			</div>
+      </div>
+    </div>
 
-			<div class="audit">
-				<div class="audit__image desk-img">
-					<img src="./assets/audit.png" />
-				</div>
+    <div class="swap" id="swap">
+      <div class="swap__header">
+        <div class="swap__header--img">
+          <img src="./assets/logo.png" />
+        </div>
+        <h3>KELPIE COIN</h3>
+      </div>
 
-				<div class="audit__content">
-					<h3 class="ghost">Audits</h3>
-					<h4><span class="yellow">Kelpie Coin</span> Smart Contract Audit</h4>
-					<p class="desk">
-						Our Kelpie Coin token protocol is being
-						<br />audited by Certik, SGE, Techrate, Solidity, etc. We
-						<br />believe they will not find any high or medium <br />security
-						issues in the Smart Contract code. Our <br />Smart Contract code is
-						developed by one of the <br />world's most proficient blockchain
-						developers.
-					</p>
+      <div class="swap__section">
+        <div class="swap__section--item">
+          <p class="item-1">Total Supply</p>
+          <p class="item-2 yellow">XXX</p>
+        </div>
 
-					<p class="mob">
-						Our Kelpie Coin token protocol is being audited by Certik, SGE,
-						Techrate, Solidity, etc. We believe they will not find any high or
-						medium security issues in the Smart Contract code. Our Smart
-						Contract code is developed by one of the world's most proficient
-						blockchain developers.
-					</p>
-					<a class="button button-inactive">REPORT COMING SOON</a>
-				</div>
-				<div class="audit__image mob-img">
-					<img src="./assets/audit.png" />
-				</div>
-			</div>
+        <div class="swap__section--item">
+          <p class="item-1">Ticker</p>
+          <p class="item-2 yellow">$KLP</p>
+        </div>
 
-			<div class="earn">
-				<div class="earn__content">
-					<h3 class="ghost">Earn</h3>
-					<h4><span class="yellow">Earn</span> Passive Income</h4>
-					<p class="desk">
-						Gain $KLP every time a transaction is made.
-						<br />Our protocol charges a 10% transaction fee; this means 7%
-						<br />goes into a locked liquidity pool and 3% is rewarded to
-						<br />our stakeholders. No need to trade, simply watch your
-						<br />balance increase in real-time. This is called a deflationary
-						<br />currency and will earn up to 80% annual yield percentage -
-						exceptionally higher than any traditional savings account.
-					</p>
-					<p class="mob">
-						Gain $KLP every time a transaction is made. Our protocol charges a
-						10% transaction fee; this means 7% goes into a locked liquidity pool
-						and 3% is rewarded to our stakeholders. No need to trade, simply
-						watch your balance increase in real-time. This is called a
-						deflationary currency and will earn up to 80% annual yield
-						percentage - exceptionally higher than any traditional savings
-						account.
-					</p>
-					<a
-						href="https://exchange.pancakeswap.finance/#/swap"
-						target="_blank"
-						rel="norefferer"
-						class="button"
-						>BUY ON PANCAKESWAP</a
-					>
-				</div>
+        <div class="swap__section--item">
+          <p class="item-1">Exchange</p>
+          <p class="item-2 yellow">DexLab</p>
+        </div>
 
-				<div class="earn__image">
-					<img src="./assets/earn.png" />
-				</div>
-			</div>
-		</section>
+        <div class="swap__section--item">
+          <p class="item-1">Donation to Charity</p>
+          <p class="item-2 yellow">2%</p>
+        </div>
+        <div class="swap__section--item">
+          <p class="item-1">Tax</p>
+          <p class="item-2 yellow">1%</p>
+        </div>
+        <div class="swap__section--item">
+          <p class="item-1">Reward to Holders</p>
+          <p class="item-2 yellow">2%</p>
+        </div>
 
-		<section id="eco">
-			<div class="eco">
-				<h3>Kelpie Coin Ecosystem</h3>
-				<div class="underline underline-eco"></div>
+      </div>
+    </div>
 
-				<div class="eco__cards">
-					<div class="eco__cards--card">
-						<div class="card-image">
-							<img src="./assets/comm.svg" />
-						</div>
-						<h4 class="card-header">100% Community Driven</h4>
-						<p>
-							Kelpie Coin has been stealth launched. 100% of $KLP supply was
-							seeded as liquidity. That means no presale and no allocation to
-							team members.
-						</p>
-					</div>
+    <div class="audit">
+      <div class="audit__image">
+        <img src="./assets/new-audit.png" />
+      </div>
 
-					<div class="eco__cards--card middle-card">
-						<div class="card-image">
-							<img src="./assets/safe.svg" />
-						</div>
-						<h4 class="card-header">100% Safe</h4>
-						<p>
-							LP tokens were burned thereby locking initial liquidity away
-							forever. Fair distribution without whales.
-						</p>
-					</div>
+      <div class="audit__content">
+        <h3 class="ghost">Audits</h3>
+        <h4><span class="yellow">Kelpie Coin</span> Smart Contract Audit</h4>
 
-					<div class="eco__cards--card">
-						<div class="card-image">
-							<img src="./assets/reward.svg" />
-						</div>
-						<h4 class="card-header">100% Holders Rewards</h4>
-						<p>
-							Holders earn passive rewards through static reflection as they
-							watch their balance of Kelpie Coin grow indefinitely.
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
+        <p>
+          Our Kelpie Coin token protocol is being audited by Certik, SGE,
+          Techrate, Solidity, etc. We believe they will not find any high or
+          medium security issues in the Smart Contract code. Our Smart
+          Contract code is developed by one of the world's most proficient
+          blockchain developers.
+        </p>
+        <div class="button button-inactive">
+          <a>REPORT COMING SOON</a>
+        </div>
+      </div>
 
-		<div class="end_bg">
-			<section id="roadmap">
-				<div class="roadmap">
-					<h2>Roadmap</h2>
-					<div class="underline underline-eco"></div>
-					<div class="roadmap__image desk-img">
-						<img src="./assets/roadmap.png" />
-					</div>
+    </div>
 
-					<div class="roadmap__image mob-img">
-						<img src="./assets/roadmap-mobile.svg" />
-					</div>
-				</div>
-			</section>
+    <div class="earn" id="earn">
+      <div class="earn__content">
+        <div class="earn__image tablet">
+          <img src="./assets/audit.png" />
+        </div>
+        <h3 class="ghost">Earn</h3>
+        <h4><span class="yellow">Earn</span> Passive Income</h4>
+        <p>
+          Gain $KLP every time a transaction is made. Our protocol charges a
+          5% transaction fee; this means 1% goes into a locked liquidity pool
+          , 2% is rewarded to our stakeholders, and 2% is donated a charity supporting Australian Kelpies. No need to trade, simply
+          watch your balance increase in real-time. This is called a
+          deflationary currency and will earn up to 80% annual yield
+          percentage - exceptionally higher than any traditional savings
+          account.
+        </p>
+        <div class="button">
+          <a href="https://trade.dexlab.space/#/market/9wFFyRfZBsuAha4YcuxcXLKwMxJR43S7fPfQLusDBzvT" target="_blank" rel="norefferer">Trade on DexLab</a>
+        </div>
+				<p class="center">* Exchange listing launches on 5/13/2022</p>
 
-			<section id="network">
-				<div class="network">
-					<h2>Our Network</h2>
-					<div class="underline"></div>
-					<div class="network__image--container">
-						<div class="network__image">
-							<img src="./assets/binance.svg" />
-						</div>
-						<div class="vertical-line"></div>
-						<div class="network__image">
-							<img src="./assets/pancake.svg" />
-						</div>
-					</div>
-				</div>
-			</section>
+      </div>
 
-			<div class="footer">
-				<p>Copyright © 2021 All Rights Reserved.</p>
-			</div>
-		</div>
-	</div>
+      <div class="earn__image desk-img">
+        <img src="./assets/audit.png" />
+      </div>
+    </div>
+  </section>
+
+  <div class="end_bg">
+    <section id="network">
+      <div class="network">
+        <h2>Our Network</h2>
+        <div class="underline"></div>
+        <div class="network__image--container">
+          <a class="network__image" href="https://solana.com/" target="_blank">
+            <img src="./assets/sol.svg" />
+          </a>
+          <div class="vertical-line"></div>
+          <a class="network__image" href="https://www.dexlab.space/" target="_blank">
+            <img src="./assets/dexlab.png" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">
+      <p>Copyright © 2021 All Rights Reserved.</p>
+    </div>
+  </div>
+</div>
 </template>
 
 <script>
 import Nav from './components/Nav.vue';
 import MobileNav from './components/MobileNav.vue';
+import HeroBackgroundAnimation from './components/HeroBackgroundAnimation.vue';
 
 export default {
-	name: 'App',
+  name: 'App',
 
-	components: {
-		Nav,
-		MobileNav,
-	},
+  components: {
+    Nav,
+    MobileNav,
+    HeroBackgroundAnimation
+  },
 };
 </script>
 
 <style>
 @keyframes background-animation {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @keyframes float {
-	0% {
-		transform: translateY(0%);
-	}
+  0% {
+    transform: translateY(0%);
+  }
 
-	40% {
-		transform: translateY(8%);
-	}
+  40% {
+    transform: translateY(8%);
+  }
 
-	80% {
-		transform: translateY(-8%);
-	}
+  80% {
+    transform: translateY(-8%);
+  }
 
-	100% {
-		transform: translateY(0%);
-	}
+  100% {
+    transform: translateY(0%);
+  }
 }
 
 html {
-	background: rgb(30, 5, 83);
-	font-family: 'Poppins', sans-serif;
-	overflow-x: hidden;
-	scroll-behavior: smooth;
+  background: white;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+  font-family: 'Roboto Mono', monospace;
 }
 
 body {
-	max-width: 1440px;
-	margin: auto;
-	overflow-x: hidden;
-	scroll-behavior: smooth;
+  max-width: 1440px;
+  margin: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background: transparent;
 }
 
-#hero {
-	background: linear-gradient(
-		120deg,
-		#fad900e7,
-		rgb(30, 5, 83),
-		rgb(78, 17, 158),
-		rgb(65, 9, 105),
-		rgb(78, 17, 158),
-		#fad900e7,
-		rgb(30, 5, 83)
-	);
-	background-size: 400% 400%;
-	animation: background-animation 20s ease infinite;
-	border-bottom: 2px solid #fad9007c;
-}
+#hero {}
 
 .hero {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	align-items: center;
-	padding: 50px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 50px 0;
+
 }
 
 .hero__content {
-	color: white;
-	margin-top: -100px;
+  color: black;
+  margin-top: -100px;
+  margin-left: -100px;
 }
 
 .hero__content--header {
-	font-size: 3.5rem;
+  font-size: 3.5rem;
+  font-weight: normal;
 }
 
 .hero__content--buttonGroup {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hero__button {
+  width: 50% !important;
+  text-align: center;
 }
 
 .button {
-	padding: 15px;
-	background: linear-gradient(to top, #45108a, #12054e);
-	border-radius: 100px;
-	border: 2px solid #fada00;
-	color: white;
-	font-weight: bolder;
-	font-size: 1.5rem;
-	text-decoration: none;
-	transition: 0.35s ease-in-out;
+  background: linear-gradient(45deg,
+      rgb(30, 5, 83),
+      rgb(78, 17, 158),
+      rgb(65, 9, 105),
+      rgb(78, 17, 158),
+      rgb(30, 5, 83));
+  background-size: 400% 400%;
+  animation: background-animation 10s ease infinite;
+  border-radius: 100px;
+  border: 1px solid #fada00;
+  padding: 15px;
+  cursor: pointer;
+  transition: 0.35s ease-in-out;
+  width: fit-content;
+}
+
+.button a {
+  color: white;
+  font-weight: normal;
+  font-size: 1.25rem;
+  text-decoration: none;
+  margin: 0 25px;
 }
 
 .button:hover::before {
-	background: linear-gradient(to top, #45108a, #45108a);
+  background: linear-gradient(45deg,
+      rgb(30, 5, 83),
+      rgb(78, 17, 158),
+      rgb(65, 9, 105),
+      rgb(78, 17, 158),
+      rgb(30, 5, 83));
+  background-size: 400% 400%;
+  animation: background-animation 10s ease infinite;
+  border: 1px solid #fada00;
+  color: white;
 
-	border: 2px solid #fada00;
-	color: white;
 }
 
 .button:hover {
-	background: #45108a;
-	border: 2px solid transparent;
-	color: #fada00;
-	box-shadow: #333 5px 8px 5px;
+  background: linear-gradient(45deg,
+      rgb(30, 5, 83),
+      rgb(78, 17, 158),
+      rgb(65, 9, 105),
+      rgb(78, 17, 158),
+      rgb(30, 5, 83));
+  transform: scale(.95);
+  background-size: 400% 400%;
+  animation: background-animation 10s ease infinite;
+  border: 1px solid transparent;
+
 }
 
-.button:active {
-	box-shadow: transparent 5px 8px 5px;
-	font-size: 1.475rem;
-}
+.button:active {}
 
 .button-inactive {
-	background: #3f3749;
+  background: #3f3749;
+
 }
+
 .button-inactive:hover {
-	background: #3f3749;
-	border: 2px solid #fada00;
-	color: white;
+  background: #3f3749;
+  border: 1px solid transparent;
+  color: white;
+  transform: scale(.95);
+
 }
 
 .yellow {
-	color: #fada00;
+  color: #fada00;
 }
 
 .hero__image img {
-	width: 400px;
-	animation: float 10s ease-in-out 0.5s infinite;
+  width: 400px;
+  animation: float 10s ease-in-out 0.5s infinite;
+}
+
+.tablet {
+  display: none;
 }
 
 .mob {
-	display: none;
+  display: none;
 }
 
+
+
 @media (max-width: 1024px) {
-	.hero__content--header {
-		font-size: 2.5rem;
-	}
+  .hero__content--header {
+    font-size: 2.5rem;
+  }
+
+  .hero__image img {
+    width: 300px;
+  }
+
 }
 
 @media (max-width: 768px) {
-	.hero {
-		margin-top: 100px;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-evenly;
-		align-items: center;
-	}
+  .hero {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 
-	.hero__content {
-		margin-bottom: 50px;
-	}
+  .hero__content {
+    margin-bottom: 50px;
+    margin-left: 0;
+  }
+
+  .hero__content--subheader {
+    margin: 50px auto;
+  }
+
+  .hero__content--header {
+    width: fit-content;
+    margin: auto;
+  }
+
+  .hero__button {
+    margin: auto;
+  }
+
+  .tablet {
+    display: block;
+  }
+
+  .desk-img {
+    display: none;
+  }
+
+	.center {
+	text-align: center !important;
+}
+
 }
 
 @media (max-width: 425px) {
-	.hero__content--header {
-		font-size: 2rem;
-	}
-	.hero__content {
-		font-size: 1rem;
-		padding: 0 10px;
-	}
+  .hero__content--header {
+    font-size: 2.5rem;
+  }
 
-	.mob {
-		display: block;
-	}
+  .hero__content--header span {
+    font-size: 2rem;
+  }
 
-	.desk {
-		display: none;
-	}
+  .hero__content--subheader {
+    text-align: justify;
+    width: 80%;
+    font-size: 1.05rem;
+    margin: 50px auto;
+  }
 
-	.button {
-		padding: 15px;
-		background: linear-gradient(to top, #45108a, #12054e);
-		border-radius: 100px;
-		border: 2px solid #fada00;
-		color: white;
-		font-weight: bolder;
-		font-size: 0.9rem;
-		text-decoration: none;
-		transition: 0.35s ease-in-out;
-	}
+  .hero__content {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .hero__button a {
+    font-size: 1.05rem;
+  }
+
+  .button {
+    padding: 15px;
+    background: linear-gradient(to top, #45108a, #12054e);
+    border-radius: 100px;
+    border: 2px solid #fada00;
+    color: white;
+    font-weight: bolder;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: 0.35s ease-in-out;
+  }
+
+  .mob {
+    display: block;
+  }
+
+  .desk {
+    display: none;
+  }
 }
 
 /* About */
 #about {
-	margin-top: 50px;
-	color: white;
-	border-top: 2px solid #fad9007c;
+  margin-top: 50px;
+  color: black;
 }
 
 .about {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
 
-	background: url('./assets/about-bg.png'),
-		linear-gradient(
-			45deg,
-			rgb(78, 17, 158) 0%,
-			rgb(65, 9, 105) 50%,
-			rgba(30, 5, 83, 1) 100%
-		);
-	background-size: 100% auto;
-	background-repeat: no-repeat;
-	background-position: center;
+  background: url('./assets/about-bg.png'), #fff;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .about__header {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	font-weight: lighter;
-	font-size: 1.75rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 1.75rem;
 }
 
 .about__header h2 {
-	font-weight: lighter;
+  font-weight: lighter;
 }
 
 .about__header--img img {
-	max-width: 50px;
-	padding-right: 25px;
+  max-width: 50px;
+  padding-right: 25px;
 }
 
 .about__content {
-	font-size: 1.2rem;
-	line-height: 2;
-	margin-bottom: 100px;
+  font-size: 1.2rem;
+  line-height: 2;
+  margin-bottom: 100px;
+}
+
+.about__content p {
+  width: 70%;
+  margin: auto;
+  text-align: justify;
 }
 
 @media (max-width: 1024px) {
-	.about-underline {
-		margin-bottom: 75px !important;
-	}
+  .about-underline {
+    margin-bottom: 75px !important;
+  }
+
+  .about__content p {
+    width: 80%;
+  }
 }
 
 @media (max-width: 768px) {
-	.about__content {
-		padding: 0 20px;
-	}
+  .about__content {
+    padding: 0 20px;
+  }
 }
 
 @media (max-width: 425px) {
-	.about__header {
-		display: flex;
-		flex-direction: column;
-		font-size: 1.5rem;
-	}
+  .about__header {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+  }
 
-	.about__header--img img {
-		max-width: 100px;
-		padding-right: 0px;
-	}
+  .about__header--img img {
+    max-width: 100px;
+    padding-right: 0px;
+  }
+
+  .about__content p {
+    font-size: 1rem;
+  }
 }
 
 /* SWAP */
 
 .swap {
-	background: linear-gradient(
-		to bottom,
-		rgb(78, 17, 158) 0%,
-		rgb(65, 9, 105) 50%,
-		rgb(19, 4, 53) 100%
-	);
-	margin: -150px 50px 0 50px;
-	border-radius: 25px;
-	padding: 25px;
-	z-index: 20000 !important;
-	box-shadow: 0px -5px 5px 0px #333;
+  background: linear-gradient(45deg,
+      rgb(30, 5, 83),
+      rgb(78, 17, 158),
+      rgb(65, 9, 105),
+      rgb(78, 17, 158),
+      rgb(30, 5, 83));
+  background-size: 400% 400%;
+  animation: background-animation 10s ease infinite;
+  margin: -150px 50px 0 50px;
+  border-radius: 25px;
+  padding: 25px;
+  z-index: 20000 !important;
+  box-shadow: 0px -5px 5px 0px #333;
+  color: white;
+  border: 1px solid rgba(250, 218, 0, 1);
 }
 
 .swap__header {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 50px;
-	font-size: 1.25rem;
-	letter-spacing: 2px;
-	word-spacing: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  word-spacing: 3px;
 }
 
 .swap__header--img img {
-	max-width: 75px;
+  max-width: 75px;
 }
 
 .swap__section {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
-	text-align: center;
-	font-size: 1.1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  text-align: center;
+  font-size: 1.1rem;
 
-	background: url('./assets/swap.png');
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: 500px 50px;
-	padding-bottom: 50px;
+  background: url('./assets/swap.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 500px 50px;
+  padding-bottom: 50px;
+}
+
+.swap__section--item {
+  margin: 30px 0;
 }
 
 .item-2 {
-	background: #12054e;
-	width: 150px;
-	margin: auto;
-	padding: 15px 25px;
-	border-radius: 15px;
+  background: #12054e;
+  width: 150px;
+  margin: auto;
+  padding: 15px 25px;
+  border-radius: 15px;
 }
 
 .blue {
-	color: #26e8ff;
+  color: #26e8ff;
+}
+
+@media (max-width: 1024px) {
+  .swap {
+    padding: 25px 0;
+  }
+
+  .swap__section {
+    background-position: 200px 0px;
+  }
 }
 
 @media (max-width: 768px) {
-	.swap__section {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr 1fr 1fr;
+  .swap__section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 
-		background: url('./assets/swap.png');
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-position: 100px 300px;
-		padding-bottom: 50px;
-	}
+    background-position: 0px 200px;
+  }
 }
 
 @media (max-width: 425px) {
-	.swap__section {
-		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-		text-align: center;
-		font-size: 1.1rem;
-		background-position: bottom;
-	}
+  .swap__section {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    font-size: 1.1rem;
+    background-size: 1500px;
+    background-position: bottom;
+  }
 
-	.swap__header {
-		margin: auto;
-		text-align: center;
-	}
+  .swap__header {
+    margin: auto;
+    text-align: center;
+  }
 
-	.swap {
-		padding: 25px;
-	}
+  .swap {
+    padding: 25px 0;
+
+  }
 }
 
 /* AUDIT */
 
 .audit {
-	background: linear-gradient(
-		to top,
-		rgb(78, 17, 158) 0%,
-		rgb(65, 9, 105) 50%,
-		rgb(30, 5, 83) 100%
-	);
+  background: white;
 
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .audit__image img,
 .earn__image img {
-	max-width: 650px;
+  max-width: 600px;
 }
 
 .audit__content {
-	margin-right: 200px;
+  margin-left: 200px;
+}
+
+.earn__content {
+  transform: translateX(-25%);
 }
 
 .audit__content h3,
 .earn__content h3 {
-	font-size: 3rem;
-	margin-bottom: -25px;
-	opacity: 0.09;
+  font-size: 3rem;
+  margin-bottom: -25px;
+  opacity: 0.09;
 }
 
 .audit__content h4,
 .earn__content h4 {
-	font-size: 2rem;
-	margin-bottom: 0px;
+  font-size: 2rem;
+  margin-bottom: 0px;
 }
 
 .audit__content p,
 .earn__content p {
-	font-size: 1.25rem;
-	margin-bottom: 50px;
-	line-height: 2;
+  font-size: 1.25rem;
+  margin-bottom: 50px;
+  line-height: 2;
 }
 
 .earn {
-	background: linear-gradient(
-		to bottom,
-		rgb(78, 17, 158) 0%,
-		rgb(65, 9, 105) 50%,
-		rgb(30, 5, 83) 100%
-	);
+  background: white;
 
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .earn__content {
-	margin-left: 200px;
+  margin-left: 200px;
 }
 
 .mob-img {
-	display: none;
+  display: none;
 }
 
 @media (max-width: 1024px) {
-	.audit__image img,
-	.earn__image img {
-		max-width: 450px;
-	}
 
-	.audit__content,
+  .audit__image img,
+  .earn__image img {
+    max-width: 450px;
+  }
+
+  .audit__content,
+  .earn__content {
+    margin: 0 25px;
+  }
+
+  .audit__content p,
+  .earn__content p {
+    text-align: justify;
+    font-size: 1.15rem;
+  }
+
 	.earn__content {
-		margin: 0 25px;
-	}
+  transform: translateX(0%);
+}
 }
 
 @media (max-width: 768px) {
-	.audit,
-	.earn {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
 
-	.audit__image img,
-	.earn__image img {
-		max-width: 600px;
-	}
+  .audit,
+  .earn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-	.desk-img {
-		display: none;
-	}
+    margin-top: 50px;
+  }
 
-	.mob-img {
-		padding-top: 50px;
-		display: block;
-	}
+  .audit__image,
+  .earn__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .audit__image img,
+  .earn__image img {
+    max-width: 500px;
+
+  }
+
+  .earn__image img {
+    margin-left: -100px;
+  }
+
+	.earn__content {
+    transform: translateX(0%);
 }
 
-@media (max-width: 768px) {
-	.audit,
-	.earn {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
+  .desk-img {
+    display: none;
+  }
 
-	.audit__image img,
-	.earn__image img {
-		max-width: 350px;
-	}
-}
+  .mob-img {
+    padding-top: 50px;
+    display: block;
+  }
 
-/* ECO */
+  .audit .button,
+  .earn .button {
+    margin: auto;
+  }
 
-.eco {
-	color: white;
-	background: url('./assets/about-bg.png'),
-		linear-gradient(
-			45deg,
-			rgb(78, 17, 158) 0%,
-			rgb(65, 9, 105) 50%,
-			rgba(30, 5, 83, 1) 100%
-		);
-	background-size: 100% auto;
-	background-repeat: no-repeat;
-	background-position: center;
+  .audit__content h3,
+  .earn__content h3 {
+    margin: auto;
+    width: fit-content;
+  }
 
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-content: center;
-	margin: 150px 0;
+  .audit__content h4,
+  .earn__content h4 {
+    margin: auto;
+    width: fit-content;
 
-	border-top: 2px solid #fad9007c;
-	border-bottom: 2px solid #fad9007c;
-	padding: 100px 0;
-}
-
-.eco h3 {
-	font-size: 2rem;
-	font-weight: lighter;
-	text-align: center;
-}
-
-.underline-eco {
-	margin-bottom: 150px !important;
-}
-
-.eco__cards {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-content: center;
-	margin-top: 50px;
-}
-
-.eco__cards--card {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 500px;
-	padding: 100px 50px;
-	margin: 25px;
-	border-radius: 20px;
-	border: 1px solid #fada00;
-
-	background: linear-gradient(
-		to bottom,
-		rgba(30, 5, 83, 0.7) 0%,
-		rgba(65, 9, 105, 0.8) 50%,
-		rgba(30, 5, 83, 0.7) 100%
-	);
-}
-
-.middle-card {
-	transform: translateY(-10%);
-}
-
-.card-image img {
-	max-width: 100px;
-}
-
-.card-header {
-	font-size: 1.35rem;
-	font-weight: normal;
-}
-
-.eco__cards--card p {
-	line-height: 2;
-	font-weight: lighter;
-}
-
-.underline {
-	width: 300px;
-	height: 3px;
-	background: #fada00;
-	margin: auto;
-}
-@media (max-width: 1024px) {
-	.eco__cards--card {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		width: 600px;
-		padding: 25px;
-		margin: 10px;
-		border-radius: 20px;
-		border: 1px solid #fada00;
-
-		background: linear-gradient(
-			to bottom,
-			rgba(30, 5, 83, 0.7) 0%,
-			rgba(65, 9, 105, 0.8) 50%,
-			rgba(30, 5, 83, 0.7) 100%
-		);
-	}
-}
-
-@media (max-width: 768px) {
-	.eco__cards {
-		flex-direction: column;
-		margin: auto;
-		margin-top: 0px;
-	}
-
-	.middle-card {
-		transform: translateY(0%);
-	}
+  }
 }
 
 @media (max-width: 425px) {
-	.eco__cards--card {
-		width: 350px;
-		margin: 10px auto !important;
-	}
+
+  .audit,
+  .earn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .audit__image img,
+  .earn__image img {
+    max-width: 350px;
+  }
+
+  .audit__content h3,
+  .earn__content h3 {
+    text-align: center;
+  }
+
+  .audit__content h4,
+  .earn__content h4 {
+    text-align: center;
+
+  }
 }
+
 /*ROADMAP*/
 
 .end_bg {
-	background: linear-gradient(
-		45deg,
-		rgb(30, 5, 83),
-		rgb(78, 17, 158),
-		rgb(65, 9, 105),
-		rgb(78, 17, 158),
-		rgb(30, 5, 83)
-	);
-	background-size: 400% 400%;
-	animation: background-animation 10s ease infinite;
+  color: black;
 }
 
 .roadmap {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	color: white;
-	border-top: 1px solid #fada00;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
 .roadmap h2 {
-	font-size: 2rem;
-	font-weight: lighter;
+  font-size: 2rem;
+  font-weight: lighter;
+  color: black;
 }
 
 .roadmap__image img {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 @media (max-width: 425px) {
-	.roadmap__image img {
-		max-width: 80%;
-	}
+  .roadmap__image img {
+    max-width: 80%;
+  }
 }
 
 /* Network */
 
 .network {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-
-	padding-top: 150px;
-	text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+  text-align: center;
 }
 
 .network h2 {
-	font-size: 2rem;
-	color: white;
-	font-weight: lighter;
+  font-size: 2rem;
+  color: black;
+  font-weight: lighter;
 }
 
 .network__image--container {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	align-items: center;
-	padding: 75px 50px;
-	width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 75px 50px;
+  width: 100%;
 }
 
 .network__image img {
-	max-width: 250px;
+  max-width: 250px;
 }
 
 .vertical-line {
-	height: 400px;
-	width: 1px;
-	background: #fada00;
+  height: 400px;
+  width: 1px;
+  background: #fada00;
 }
 
 .footer {
-	text-align: center;
-	padding: 0 0 20px 0;
-	color: rgba(255, 255, 255, 0.5);
-	border-bottom: 5px solid #fada00;
+  text-align: center;
+  padding: 0 0 20px 0;
+  color: rgba(255, 255, 255, 0.5);
+  border-bottom: 5px solid #fada00;
 }
 
 @media (max-width: 1024px) {
-	.network__image img {
-		max-width: 200px;
-	}
+  .network__image img {
+    max-width: 200px;
+  }
 }
 
 @media (max-width: 768px) {
-	.network__image img {
-		max-width: 150px;
-	}
+  .network__image img {
+    max-width: 150px;
+  }
 
-	.vertical-line {
-		height: 300px;
-		width: 1px;
-		background: #fada00;
-	}
+  .vertical-line {
+    height: 300px;
+    width: 1px;
+    background: #fada00;
+  }
 }
 
 @media (max-width: 425px) {
-	.network__image--container {
-		flex-direction: column;
-	}
+  .network__image--container {
+    flex-direction: column;
+  }
 
-	.vertical-line {
-		height: 1px;
-		width: 300px;
-		background: #fada00;
-		margin: 50px 0;
-	}
+  .vertical-line {
+    height: 1px;
+    width: 300px;
+    background: #fada00;
+    margin: 50px 0;
+  }
 }
 </style>
