@@ -22,11 +22,11 @@
 
         <div class="hero__content--buttonGroup">
           <div class="button hero__button">
-            <a href="https://trade.dexlab.space/#/market/9wFFyRfZBsuAha4YcuxcXLKwMxJR43S7fPfQLusDBzvT" target="_blank" rel="norefferer">Trade on DexLab</a>
+            <a href="https://www.dexlab.space/swap?id=3GQKSGznA6AkyAnhTQorUCwsu811z9hptAvm43Eszcmx" target="_blank" rel="norefferer">Trade on DexLab</a>
 						
           </div>
         </div>
-									<p class="center">* Exchange listing launches on 5/13/2022</p>
+							
 
       </div>
       <div class="hero__image">
@@ -139,9 +139,8 @@
           account.
         </p>
         <div class="button">
-          <a href="https://trade.dexlab.space/#/market/9wFFyRfZBsuAha4YcuxcXLKwMxJR43S7fPfQLusDBzvT" target="_blank" rel="norefferer">Trade on DexLab</a>
+          <a href="https://www.dexlab.space/swap?id=3GQKSGznA6AkyAnhTQorUCwsu811z9hptAvm43Eszcmx" target="_blank" rel="norefferer">Trade on DexLab</a>
         </div>
-				<p class="center">* Exchange listing launches on 5/13/2022</p>
 
       </div>
 
