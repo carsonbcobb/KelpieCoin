@@ -16,7 +16,7 @@
 
 <script>
 export default {
-	name: 'Nav',
+	name: 'AppNavigation',
 };
 </script>
 
@@ -26,13 +26,12 @@ export default {
 	flex-direction: row;
 	justify-content: space-between;
 	align-content: center;
-	border-top: 8px solid #f9da00;
 	padding: 5px 100px;
 	background: rgba(265,265,265, .9);
 }
 
 .nav__logo img {
-	max-block-size: 75px;
+	max-block-size: 50px;
 }
 
 .nav__links {
@@ -46,14 +45,16 @@ export default {
 	font-size: 1.15rem;
 	text-decoration: none;
 	font-weight: normal;
-	color: black;
+	color: #8B4513;
 	border-bottom: 2px solid transparent;
 	transition: 0.35s ease-in-out;
 	cursor: pointer;
+	font-family: "Fredoka", sans-serif;
+
 }
 
 .nav__links--link:hover {
-	border-bottom: 2px solid #f9da00;
+	border-bottom: 2px solid #FFA500;
 }
 
 @media (max-width: 1024px) {

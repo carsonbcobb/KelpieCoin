@@ -1,4 +1,5 @@
 <template>
+<div class="bg-container">
 <div class="bg">
   <div class="dotWrapper dotWrapper-1">
     <div class="dot dot-1"></div>
@@ -226,6 +227,7 @@
     <div class="dot dot-75"></div>
   </div>
 </div>
+</div>
 </template>
 
 <script>
@@ -235,8 +237,20 @@ export default {
 </script>
 
 <style scoped>
+
+.bg-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90vw; /* Adjust to your required width */
+  height: 100vh; /* Adjust to your required height */
+  overflow: hidden;
+  z-index: -1;
+}
 .bg {
-  z-index:-1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 .bg .dotWrapper {
   position: absolute;
@@ -695,7 +709,7 @@ export default {
 .bg .dot {
   width: 4px;
   height: 4px;
-  background: gold;
+  background: #FFA500;
   border-radius: 50%;
   
 }

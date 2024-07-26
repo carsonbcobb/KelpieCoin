@@ -25,7 +25,11 @@
 			<div class="navigation__background">&nbsp;</div>
 
 			<nav class="navigation__nav">
+
 				<ul class="navigation__list" id="nav-list">
+					<div id="navmenu-img">
+					<img src="../assets/navmenu.png" />
+				</div>
 					<li class="navigation__item" @click="hideNav()">
 						<a href="#hero" class="navigation__link">Launchpad</a>
 					</li>
@@ -42,7 +46,9 @@
 					<li class="navigation__item" @click="hideNav()">
 						<a href="#network" class="navigation__link">Network</a>
 					</li>
+
 				</ul>
+
 			</nav>
 		</div>
 	</div>
@@ -59,12 +65,20 @@ export default {
 	methods: {
 		hideNav: function() {
 			this.checked = false;
-		},
-	},
+		},     toggleScrollLock(event) {
+      if (event.target.checked) {
+        this.lockScroll();
+      } else {
+        this.unlockScroll();
+      }
+    }
+	}
 };
 </script>
-
 <style scoped>
+
+
+
 @keyframes background-animation {
   0% {
     background-position: 0% 50%;
@@ -81,10 +95,11 @@ export default {
 
 
 .mobileNav {
-	padding: 25px;
+	padding: 0 10px;
 }
 .nav__logo img {
-	max-width: 100px;
+	max-width: 60px;
+	
 }
 
 @media (min-width: 768px) {
@@ -97,6 +112,8 @@ export default {
 	.mobileNav {
 		display: block;
 	}
+
+	
 }
 
 .heading-primary {
@@ -212,6 +229,16 @@ export default {
 		transform: translateY(0);
 	}
 }
+
+
+#navmenu-img {
+	margin: 25px auto 0 auto;
+
+}
+
+#navmenu-img img {
+	width: 200px;
+}
 .navigation__checkbox {
 	display: none;
 }
@@ -225,17 +252,12 @@ export default {
 }
 .navigation__button {
 	position: absolute;
-	top: 2rem;
-	right: 1.5rem;
-	width: 5rem;
-	height: 5rem;
+	top: 10px;
+	right: 10px;
+	width: 60px;
+	height: 60px;
 	border-radius: 50%;
-background: linear-gradient(45deg,
-      rgb(30, 5, 83),
-      rgb(78, 17, 158),
-      rgb(65, 9, 105),
-      rgb(78, 17, 158),
-      rgb(30, 5, 83));
+background: #FFA500;
   background-size: 400% 400%;
   animation: background-animation 10s ease infinite;	z-index: 10;	box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
 	cursor: pointer;
@@ -248,17 +270,12 @@ background: linear-gradient(45deg,
 }
 .navigation__background {
 	position: absolute;
-	top: 2rem;
-	right: 1.5rem;
-	width: 5rem;
-	height: 5rem;
+	top: 10px;
+	right: 10px;
+	width: 60px;
+	height: 60px;
 	border-radius: 50%;
-  background: linear-gradient(45deg,
-      rgba(250, 218, 0, .99),
-      rgba(204, 177, 0, .99),
-      rgba(250, 218, 0, .99),
-			rgba(204, 177, 0, .99),
-      rgba(250, 218, 0, .99));
+  background: #8B4513;
   background-size: 400% 400%;
   animation: background-animation 10s ease infinite;	z-index: 10;
 	transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
@@ -277,12 +294,19 @@ background: linear-gradient(45deg,
 		transform 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .navigation__list {
-margin: 250px 25px 0 0;
 	text-align: center;
 	list-style: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+	font-family: "Fredoka", sans-serif;
 }
 .navigation__item {
 	margin: 15px 0;
+	
+	font-family: "Fredoka", sans-serif;
 }
 .navigation__link::before {
 	padding-right: 1.2rem;
@@ -314,14 +338,14 @@ margin: 250px 25px 0 0;
 .navigation__icon {
 	display: inline-block;
 	position: relative;
-	width: 3rem;
-	height: 0.5rem;
-	top: 35%;
+	width: 1rem;
+	height: 0.15rem;
+	top: 30%;
 	transition: transform 0.25s ease-in-out;
 }
 .navigation__icon-span {
 	position: absolute;
-	height: 0.25rem;
+	height: 0.15rem;
 	width: 50%;
 	background:  rgba(250, 250, 250, .75);
 	transition: all 0.5s ease-in;
@@ -407,5 +431,15 @@ margin: 250px 25px 0 0;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
+}
+
+.navigation__checkbox:checked {
+	overflow: hidden;
+}
+
+@media (max-width: 426px){
+	.navigation__button, .navigation__background {
+		right: -10px;
+	}
 }
 </style>
