@@ -55,6 +55,7 @@
           </div>
           <h3>KELPIE COIN</h3>
         </div>
+        <p id="token-url">Token Address: CerCpUTyYsyEJiq33X2dReEfXPQ5JonJFS9Pzd6u2F55</p>
 
         <div class="swap__section">
           <div class="swap__section--item">
@@ -81,6 +82,7 @@
             <p class="item-1">Reward to Holders</p>
             <p class="item-2 highlight">2%</p>
           </div>
+          
         </div>
       </div>
 
@@ -194,19 +196,26 @@ export default {
     },
     lockScroll() {
       const scrollPosition = window.scrollY;
+      const mobileNavSection = document.querySelector('.mobileNav');
       document.body.style.overflow = 'hidden';
       document.body.style.position = 'fixed';
       document.body.style.top = `-${scrollPosition}px`;
       document.documentElement.style.width = '100vw';
       document.body.style.margin = '0';
+      mobileNavSection.style.height = '100%';
+
     },
     unlockScroll() {
+      const mobileNavSection = document.querySelector('.mobileNav');
       const scrollPosition = Math.abs(parseInt(document.body.style.top, 10));
       document.body.style.overflow = '';
       document.body.style.position = '';
       document.body.style.top = '';
       document.documentElement.style.overflowX = 'hidden';
       document.documentElement.style.width = '100vw';
+      setTimeout(() => {
+  mobileNavSection.style.height = '200px';
+}, 1000);
       window.scrollTo(0, scrollPosition);
     }
   }
@@ -257,6 +266,10 @@ body {
   margin: auto;
   overflow-x: hidden;
   
+}
+
+#token-url {
+  text-align: center;
 }
 .mob, .tablet {
   display: none;
