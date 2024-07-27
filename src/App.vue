@@ -421,7 +421,7 @@ background: white;
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 435px) {
   .hero__content--header {
     font-size: 2.5rem;
   }
@@ -500,7 +500,7 @@ background: white;
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 435px) {
   .about__header {
     flex-direction: column;
     font-size: 1.5rem;
@@ -591,7 +591,7 @@ background: white;
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 435px) {
 
   .swap {
     padding: 0;
@@ -694,7 +694,7 @@ background: white;
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 435px) {
   .audit{
     flex-direction: column;
     justify-content: center;
@@ -769,7 +769,7 @@ background: white;
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 435px) {
   .network__image--container {
     flex-direction: column;
     margin-top: 50px;

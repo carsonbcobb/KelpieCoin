@@ -486,7 +486,7 @@ export default {
     overflow: hidden;
 }
 
-@media (max-width: 426px) {
+@media (max-width: 435px) {
 
     .navigation__button,
     .navigation__background {
