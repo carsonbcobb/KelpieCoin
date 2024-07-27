@@ -1,4 +1,4 @@
-<template>
+<template >
   <div>
     <section id="hero">
       <AppNavigation />
@@ -117,7 +117,7 @@
             Trade on DexLab
           </a>
         </div>
-        <div class="earn__image desk-img">
+        <div class="earn__image">
           <img src="./assets/audit.png" alt="Audit Image" />
         </div>
       </div>
@@ -159,10 +159,17 @@ export default {
     MobileNav,
     HeroBackgroundAnimation,
   },
+  data() {
+    return {
+      showMobileNav: false,
+    };
+  },
   mounted() {
     const navigationCheckbox = document.querySelector('.navigation__checkbox');
 
     navigationCheckbox.addEventListener('change', this.toggleScrollLock);
+    document.documentElement.style.width = '100vw';
+    document.documentElement.style.overflowX = 'hidden';
   },
   beforeUnmount() {
     const navigationCheckbox = document.querySelector('.navigation__checkbox');
@@ -177,23 +184,32 @@ export default {
         this.unlockScroll();
       }
     },
+    toggleMobileNav() {
+      this.showMobileNav = !this.showMobileNav;
+      if (this.showMobileNav) {
+        this.lockScroll();
+      } else {
+        this.unlockScroll();
+      }
+    },
     lockScroll() {
       const scrollPosition = window.scrollY;
       document.body.style.overflow = 'hidden';
       document.body.style.position = 'fixed';
       document.body.style.top = `-${scrollPosition}px`;
-      document.body.style.width = '90%';
+      document.documentElement.style.width = '100vw';
+      document.body.style.margin = '0';
     },
     unlockScroll() {
       const scrollPosition = Math.abs(parseInt(document.body.style.top, 10));
       document.body.style.overflow = '';
       document.body.style.position = '';
       document.body.style.top = '';
-      document.body.style.width = '';
+      document.documentElement.style.overflowX = 'hidden';
+      document.documentElement.style.width = '100vw';
       window.scrollTo(0, scrollPosition);
     }
   }
-  
 };
 </script>
 
@@ -225,17 +241,22 @@ export default {
   }
 }
 
+#app {
+  overflow-x: hidden;
+}
+
 html, body {
   background: white;
   font-family: 'Comic Neue', sans-serif;
-  overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
 
 body {
   max-width: 1440px;
   margin: auto;
   overflow-x: hidden;
+  
 }
 .mob, .tablet {
   display: none;
@@ -360,13 +381,14 @@ background: white;
   }
   #hero .hero {
     flex-direction: column-reverse !important;
-    margin-top: 0px;
+    margin-top: 125px;
     padding: 0;
   }
   .hero__content {
     margin-bottom: 10px;
     margin-left: 0;
     text-align: center;
+    margin-top: 25px;
   }
 
   .hero__content--header {
@@ -393,13 +415,17 @@ background: white;
   .hero__content--subheader {
     width: 80%;
     font-size: 1.05rem;
-    margin: 50px auto;
+    margin: 25px auto;
+  }
+
+  .hero__content {
+    width: 100%;
   }
   .hero__button a {
     font-size: 1.05rem;
   }
   .button {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -552,15 +578,20 @@ background: white;
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
 
-
+  .swap {
+    padding: 0;
+    width: 100%;
+    transform: scale(.95);
+  }
   
   .swap__section {
-    grid-template-columns: 1fr;
     font-size: 1.1rem;
     background-size: 1500px;
     background-position: bottom;
+    display: flex;
+        flex-direction: column;
   }
 
   
@@ -651,9 +682,14 @@ background: white;
 }
 
 @media (max-width: 425px) {
-  .audit,
-  .earn {
+  .audit{
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .earn {
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
   }
@@ -723,6 +759,7 @@ background: white;
 @media (max-width: 426px) {
   .network__image--container {
     flex-direction: column;
+    margin-top: 50px;
   }
   .vertical-line {
     height: 1px;
@@ -732,7 +769,12 @@ background: white;
 
   .swap {
     width: 100% !important;
-    padding: 25px 10px;
+    padding: 25px 0px;
+  }
+
+
+  .audit__content, .earn__content {
+    padding: 0 20px;
   }
 }
 </style>

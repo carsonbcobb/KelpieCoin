@@ -28,6 +28,8 @@ export default {
 	align-content: center;
 	padding: 5px 100px;
 	background: rgba(265,265,265, .9);
+	max-width: 1440px;
+    margin: auto;
 }
 
 .nav__logo img {
